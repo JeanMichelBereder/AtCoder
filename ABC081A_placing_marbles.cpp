@@ -8,9 +8,9 @@ int main()
     int input, a, b, c;
     cin >> input;
     // Calculate product
-    a = input % 100;
-    b = input % 10;
-    c = (input - a - b ) / 100;
+    a = input % 10;
+    b = (input % 100 - a) / 10;
+    c = (input - a - b) / 100;
     // Output
     cout << a + b + c;
     return 0;
